@@ -13,19 +13,11 @@ const NavBar = () => {
   };
 
   return (
-    <header className="h-[5rem] w-[100%] bg-gray-600">
-      <nav
-        className={`sm:relative flex items-center h-[5rem] border-none rounded-lg justify-between `}
-      >
+    <header className="header">
+      <nav className="nav">
         <Logo />
         <SearchInput />
-        <div
-          className={
-            toggleNav
-              ? "absolute top-20 h-[10rem] w-[100%]  flex flex-col items-center justify-evenly bg-gray-600 z-20"
-              : "w-[30%] flex justify-evenly sm:hidden xsm:hidden"
-          }
-        >
+        <div className={toggleNav ? "togglenav" : "togglenavElse"}>
           <NavButton />
           <NavButton />
         </div>

@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 const ToggleMenu = ({ onClick }) => {
   return (
     <Fragment>
-      <div onClick={onClick} className="hidden cursor-pointer sm:flex xsm:flex">
+      <div onClick={onClick} className="toggleMenu">
         <MenuIcon
           style={{
             marginRight: "10px",
